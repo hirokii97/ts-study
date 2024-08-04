@@ -56,6 +56,7 @@
         };
       }
 
+    //  ジェネリクスの例
       function log<T>(a:T,b:T){
         console.log(`a:${a}, b${b}`)
       }
