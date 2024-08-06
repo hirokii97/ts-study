@@ -64,6 +64,24 @@
       log<string>("文字だよ","mozidayo")
       log<number>(1,2)
       log<boolean>(true,false)
+
+
+      const id:number = 20001
+      const userName:string = "Taro"
+      const isAdmin: boolean = true
+      let count :null | number = 0
+
+      type User = {
+        tag: "user" | "admin"
+        id: number,
+        name: string
+      }
+
+      const taro :User = {
+        tag: "user",
+        id: 1234,
+        name: "taro"
+      }
       
       
       
