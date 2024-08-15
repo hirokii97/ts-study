@@ -46,6 +46,7 @@ function createPerson(name, age) {
         }
     };
 }
+// ジェネリクスの例
 function log(a, b) {
     console.log(`a:${a}, b${b}`);
 }
