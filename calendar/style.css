@@ -10,14 +10,14 @@
     width: 100%;
   }
   
-  .calendar {
+  /* .calendar {
     width: 300px;
     margin: calc(50vh - 1.5em) auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-  }
+  } */
   .calendar__container {
     width: 150px;
     text-align: center;
