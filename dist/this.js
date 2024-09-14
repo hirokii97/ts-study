@@ -35,5 +35,12 @@ const myName = new Aho('ぼけ');
 console.log(myName.name);
 const dangerButton = document.getElementById('danger-button');
 dangerButton === null || dangerButton === void 0 ? void 0 : dangerButton.addEventListener('click', function () {
-    console.log(this);
+    if (this.classList.contains('pushed')) {
+        this.innerHTML = '押してない！';
+        this.classList.remove('pushed');
+    }
+    else {
+        this.innerHTML = '押した！';
+        this.classList.add('pushed');
+    }
 });
