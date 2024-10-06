@@ -48,4 +48,11 @@ const doFetch = () => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 doFetch();
+// Q4
+const textInput = document.querySelector('#textInput');
+textInput === null || textInput === void 0 ? void 0 : textInput.addEventListener('input', (e) => {
+    const target = e.target;
+    const outPut = document.querySelector('#output');
+    outPut && target ? (outPut.textContent = target.value) : console.error('エラーだよ！！');
+});
 export {};

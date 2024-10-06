@@ -44,3 +44,11 @@ const doFetch = async () => {
   }
 };
 doFetch();
+
+// Q4
+const textInput = document.querySelector('#textInput') as HTMLElement
+textInput?.addEventListener('input', (e) => {
+    const target = e.target as HTMLInputElement
+    const outPut = document.querySelector('#output')
+    outPut && target ? (outPut.textContent  = target.value) : console.error('エラーだよ！！')
+});
